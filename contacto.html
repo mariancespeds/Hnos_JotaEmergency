@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <header class="navbar">
+    <div class="navbar-logo">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="Logo Hermanos Jota">
+            </a>
+        </div>
+        <nav>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">INICIO</a></li>
+                <li class="nav-item"><a href="productos.html" class="nav-link">CATÁLOGO</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="navbar-cart">
+            <a href="carrito.html" class="cart-icon">
+                <img src="./assets/carrito.png" alt="Carrito">
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    <main>
+<section class="contact-section">
+    <h2>Contactános</h2>
+    <form id="contactForm" class="contact-form">
+        <div class="form-group">
+            <label for="name"> Nombre: </label>
+            <input type="text" name="name" id="name" required>
+            <div class="error-message" id="nameError"></div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message" id="emailError"></div>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <div class="error-message" id="messageError"></div>
+        </div>
+        
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+      <div id="successMessage" class="success-message"></div>
+</section>
+</main>
+    <footer>
+        <p>&copy; 2025 Hermanos Jota Forniture.</p>
+        <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+        <p>Email: brand@hermanosjota.com</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
